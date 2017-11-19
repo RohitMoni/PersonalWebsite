@@ -1,0 +1,70 @@
+<!--[if lt IE 9]>
+	<script>
+		document.createElement('video');
+	</script>
+<![endif]-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Our CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora|Poiret+One|Poppins" rel="stylesheet">
+
+	<!-- Social Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Rohit()</title>
+</head>
+
+<body>
+	<!-- Headline -->
+	<div class="headline unselectable">
+		<h1>| ROHIT( ) |</h1>
+	</div> 
+
+	<!-- Center block and text -->
+	<div class="center-screen-container unselectable">
+		<div class="main-text">
+			<h1>LATEST</h1>
+			<h2>Minecraft</h2>
+			<p>
+				Worked on gameplay and cross-platform play for Minecraft at Skybox Labs<br>
+				(C++, Git, Visual Studio)
+			</p>
+		</div>
+		<div class="main-buttons">
+			<button class="button link-button">PROJECTS</button>
+			<button class="button link-button">RESUME</button>
+		</div>
+	</div>
+
+	<!-- Social media buttons -->
+	 <div class="social-icon-container">
+		<a href="https://www.facebook.com/MrRohitMoni" target="_blank" class="fa fa-facebook"> </a>
+		<a href="https://github.com/RohitMoni" target="_blank" class="fa fa-github"> </a>
+		<a href="https://www.linkedin.com/in/rohitmoni/" target="_blank" class="fa fa-linkedin"> </a>
+	</div> 
+
+	<!-- Background video -->
+	<video playsinline autoplay muted loop poster="assets/landingPage/backgroundImage.jpg" class="background-video" id="bgvid">
+		<source src="something.webm" type="video/webm">
+		<source src="assets/landingPage/backgroundVideo.mp4" type="video/mp4">
+	</video>  
+
+	<!-- Vignette -->
+	<div class="fullscreen-vignette"></div> 
+</body>
+
+</html>
+
+<script>
+	var vid = document.getElementById("bgvid");
+	if (window.matchMedia('(prefers-reduced-motion)').matches) {
+		vid.removeAttribute("autoplay");
+		vid.pause();
+	}
+
+</script>
