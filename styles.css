@@ -149,6 +149,8 @@ body {
 	text-align: center;
 	flex-basis: 5%;
 	margin: 5%;
+	padding: 1%;
+	min-height: 40px;
 }
 
 .fa {
