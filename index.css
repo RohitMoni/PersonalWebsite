@@ -1,3 +1,7 @@
+body {
+	justify-content: space-between;
+}
+
 .center-screen-container {
 	display: block;
 	margin: 0;

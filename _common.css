@@ -13,13 +13,15 @@ h1, h2, h3, h4, h5 {
 
 body {
 	align-items: center;
-	background-color: #000;
+	background-color: #1f1f1f;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	justify-content: space-between;
 	margin: 0 0;
 	overflow: auto;
+
+	/* Background pattern from Subtle Patterns */
+	background: url(assets/_common/bg_dark_sharp_edges.png) repeat center center fixed;
 }
 
 .unselectable {
