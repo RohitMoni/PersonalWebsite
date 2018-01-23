@@ -1,8 +1,29 @@
+/* Colours */
+
+$text-colour-main: #fafafa;
+
+$text-colour: #6f6f6f;
+$text-colour-hover: #9f9f9f;
+$text-colour-selected: #afafaf;
+$text-colour-active: #bfbfbf;
+
+$background-colour: #1f1f1f;
+
+$horizontal-line-colour: #a0a0a0;
+
+/* Fonts */
+
+$font-serif: 'Lora', serif;
+$font-sans-serif: 'Poiret One', cursive;
+$font-nav: 'Poppins';
+
+/* ------------------- */
+
 html {
-	color: #fafafa;
+	color: $text-colour-main;
 	line-height: 1.6;
 
-	font-family: 'Lora', serif;
+	font-family: $font-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -13,7 +34,7 @@ h1, h2, h3, h4, h5 {
 
 body {
 	align-items: center;
-	background-color: #1f1f1f;
+	background-color: $background-colour;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -29,46 +50,46 @@ hr {
 	height: 1px;
 	width: 60%;
 	border: 0;
-	border-top: 1px solid #a0a0a0;
+	border-top: 1px solid $horizontal-line-colour;
 	margin: 1em 0;
 	padding: 0;
 }
 
 .nav-hr {
 	width: 80%;
-	border-color: #6f6f6f;
+	border-color: $text-colour;
 }
 
 .nav-text {
-	color: #6f6f6f;
+	color: $text-colour;
 	line-height: 2.5;
 	word-spacing: 15px;
 	font-size: 110%;
-	font-family: 'Poppins';
+	font-family: $font-nav;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 .nav-text .selected {
-	color: #afafaf;
+	color: $text-colour-selected;
 }
 
 .nav-text a:link {
-	color: #6f6f6f;
+	color: $text-colour;
 	text-decoration: none;
 }
 
 .nav-text a:visited {
-	color: #6f6f6f;
+	color: $text-colour;
 }
 
 .nav-text a:hover {
-	color: #9f9f9f;
+	color: $text-colour-hover;
 	text-decoration: underline;
 }
 
 .nav-text a:active {
-	color: #bfbfbf;
+	color: $text-colour-active;
 }
 
 .spacer {
@@ -120,7 +141,7 @@ hr {
 
 .headline h1 {
 	margin: 20px;
-	font-family: 'Poiret One', cursive;
+	font-family: $font-sans-serif;
 }
 
 .social-icon-container {
