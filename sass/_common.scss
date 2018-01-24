@@ -1,29 +1,13 @@
-/* Colours */
-
-$text-colour-main: #fafafa;
-
-$text-colour: #6f6f6f;
-$text-colour-hover: #9f9f9f;
-$text-colour-selected: #afafaf;
-$text-colour-active: #bfbfbf;
-
-$background-colour: #1f1f1f;
-
-$horizontal-line-colour: #a0a0a0;
-
-/* Fonts */
-
-$font-serif: 'Lora', serif;
-$font-sans-serif: 'Poiret One', cursive;
-$font-nav: 'Poppins';
+@import '_common_mixins';
+@import '_common_variables';
 
 /* ------------------- */
 
 html {
-	color: $text-colour-main;
+	color: $colour-3;
 	line-height: 1.6;
 
-	font-family: $font-serif;
+	font-family: $font-text;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +18,7 @@ h1, h2, h3, h4, h5 {
 
 body {
 	align-items: center;
-	background-color: $background-colour;
+	background-color: $colour-2;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -42,7 +26,7 @@ body {
 	overflow: auto;
 
 	/* Background pattern from Subtle Patterns */
-	background: url(assets/_common/bg_dark_sharp_edges.png) repeat center center fixed;
+	background: $background-regular-url repeat center center fixed;
 }
 
 hr {
@@ -50,46 +34,46 @@ hr {
 	height: 1px;
 	width: 60%;
 	border: 0;
-	border-top: 1px solid $horizontal-line-colour;
-	margin: 1em 0;
+	border-top: 1px solid $colour-1;
+	margin: 1rem 0;
 	padding: 0;
 }
 
 .nav-hr {
 	width: 80%;
-	border-color: $text-colour;
+	border-color: $colour-1;
 }
 
 .nav-text {
-	color: $text-colour;
+	color: $colour-1;
 	line-height: 2.5;
-	word-spacing: 15px;
+	word-spacing: 1rem;
 	font-size: 110%;
 	font-family: $font-nav;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
 
-.nav-text .selected {
-	color: $text-colour-selected;
-}
+	.selected {
+		color: $colour-3;
+	}
 
-.nav-text a:link {
-	color: $text-colour;
-	text-decoration: none;
-}
+	a:link {
+		color: $colour-1;
+		text-decoration: none;
+	}
 
-.nav-text a:visited {
-	color: $text-colour;
-}
+	a:visited {
+		color: $colour-1;
+	}
 
-.nav-text a:hover {
-	color: $text-colour-hover;
-	text-decoration: underline;
-}
+	a:hover {
+		color: $colour-4;
+		text-decoration: underline;
+	}
 
-.nav-text a:active {
-	color: $text-colour-active;
+	a:active {
+		color: $colour-1;
+	}
 }
 
 .spacer {
@@ -102,20 +86,20 @@ hr {
 }
 
 .h10 {
-	height: 10px;
+	height: 0.625rem;
 }
 
 .h20 {
-	height: 20px;
+	height: 1.25rem;
 }
 
 .h30 {
-	height: 30px;
+	height: 1.875rem;
 }
 
 .center-strip {
 	align-items: center;
-	background-color: rgba(29, 29, 29, 0.774);
+	background-color: $colour-5;
 	display: flex;
 	flex-direction: column;
 	width: 70%;
@@ -124,30 +108,26 @@ hr {
 
 .unselectable {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    @include user-select(none);
     cursor: default;
 }
 
 .headline {
-	 /* background-color: #aaa;  */
 	flex-basis: 5%;
 	display: flex;
 	align-items: center;
-}
+	 /* background-color: #aaa;  */
 
-.headline h1 {
-	margin: 20px;
-	font-family: $font-sans-serif;
+	 h1 {
+		margin: 1.25rem;
+		font-family: $font-main-title;
+	 }
 }
 
 .social-icon-container {
 	border: 1px solid;
-	border-color: #a0a0a0;
-	background-color: rgba(20, 20, 20, 0.8);
+	border-color: $colour-1;
+	background-color: $colour-5;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -161,35 +141,31 @@ hr {
 }
 
 .fa {
-	padding: 10px;
-	font-size: 30px;
-	width: 20px;
+	padding: 0.625rem;
+	font-size: 1.875rem;
+	width: 1.25rem;
 	text-align: center;
 	text-decoration: none;
 
-	-o-transition: .2s;
-	-ms-transition: .2s;
-	-moz-transition: .2s;
-	-webkit-transition: .2s;
-	transition: .2s;
-	margin: 0 5px;
-}
+	@include transition(.2s);
+	margin: 0 0.3125rem;
 
-.fa:hover {
-	opacity: 0.7;
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .fa-facebook {
-	background: #427dd6;
-	color: white;
+	background: $colour-facebook-icon;
+	color: $colour-3;
 }
 
 .fa-github {
-	background: #354359;
-	color: white;
+	background: $colour-github-icon;
+	color: $colour-3;
 }
 
 .fa-linkedin {
-	background: #427dd6;
-	color: white;
+	background: $colour-linkedin-icon;
+	color: $colour-3;
 }

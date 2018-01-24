@@ -1,5 +1,6 @@
 /* Colours */
 /* Fonts */
+/* Main images */
 /* ------------------- */
 html {
   color: #fafafa;
@@ -15,14 +16,14 @@ h1, h2, h3, h4, h5 {
 
 body {
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: #050505;
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0 0;
   overflow: auto;
   /* Background pattern from Subtle Patterns */
-  background: url(assets/_common/bg_dark_sharp_edges.png) repeat center center fixed;
+  background: url(../assets/_common/bg_dark_sharp_edges.png) repeat center center fixed;
 }
 
 hr {
@@ -31,19 +32,19 @@ hr {
   width: 60%;
   border: 0;
   border-top: 1px solid #a0a0a0;
-  margin: 1em 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
 .nav-hr {
   width: 80%;
-  border-color: #6f6f6f;
+  border-color: #a0a0a0;
 }
 
 .nav-text {
-  color: #6f6f6f;
+  color: #a0a0a0;
   line-height: 2.5;
-  word-spacing: 15px;
+  word-spacing: 1rem;
   font-size: 110%;
   font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
@@ -51,25 +52,25 @@ hr {
 }
 
 .nav-text .selected {
-  color: #afafaf;
+  color: #fafafa;
 }
 
 .nav-text a:link {
-  color: #6f6f6f;
+  color: #a0a0a0;
   text-decoration: none;
 }
 
 .nav-text a:visited {
-  color: #6f6f6f;
+  color: #a0a0a0;
 }
 
 .nav-text a:hover {
-  color: #9f9f9f;
+  color: #cacaca;
   text-decoration: underline;
 }
 
 .nav-text a:active {
-  color: #bfbfbf;
+  color: #a0a0a0;
 }
 
 .spacer {
@@ -82,20 +83,20 @@ hr {
 }
 
 .h10 {
-  height: 10px;
+  height: 0.625rem;
 }
 
 .h20 {
-  height: 20px;
+  height: 1.25rem;
 }
 
 .h30 {
-  height: 30px;
+  height: 1.875rem;
 }
 
 .center-strip {
   align-items: center;
-  background-color: rgba(29, 29, 29, 0.774);
+  background-color: rgba(20, 20, 20, 0.7);
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -104,30 +105,30 @@ hr {
 
 .unselectable {
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
+  user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
   cursor: default;
 }
 
 .headline {
-  /* background-color: #aaa;  */
   flex-basis: 5%;
   display: flex;
   align-items: center;
+  /* background-color: #aaa;  */
 }
 
 .headline h1 {
-  margin: 20px;
+  margin: 1.25rem;
   font-family: "Poiret One", cursive;
 }
 
 .social-icon-container {
   border: 1px solid;
   border-color: #a0a0a0;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(20, 20, 20, 0.7);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -141,17 +142,17 @@ hr {
 }
 
 .fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 20px;
+  padding: 0.625rem;
+  font-size: 1.875rem;
+  width: 1.25rem;
   text-align: center;
   text-decoration: none;
-  -o-transition: .2s;
-  -ms-transition: .2s;
-  -moz-transition: .2s;
-  -webkit-transition: .2s;
-  transition: .2s;
-  margin: 0 5px;
+  transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  margin: 0 0.3125rem;
 }
 
 .fa:hover {
@@ -160,19 +161,21 @@ hr {
 
 .fa-facebook {
   background: #427dd6;
-  color: white;
+  color: #fafafa;
 }
 
 .fa-github {
-  background: #354359;
-  color: white;
+  background: grey;
+  color: #fafafa;
 }
 
 .fa-linkedin {
   background: #427dd6;
-  color: white;
+  color: #fafafa;
 }
 
+/* Page Vars */
+/* ******************* */
 body {
   justify-content: space-between;
 }
@@ -181,18 +184,17 @@ body {
   display: block;
   margin: 0;
   flex-basis: 40%;
-  min-width: 100px;
-  max-width: 600px;
+  min-width: 6.25rem;
+  max-width: 37.5rem;
   width: 65%;
   /* background-color: white;   */
 }
 
 .main-text {
-  border: 1px solid #efefef;
-  padding: 20px 20px 10px 20px;
+  border: 1px solid #fafafa;
+  padding: 1.25rem 1.25rem 0.625rem 1.25rem;
   margin: 0 auto;
-  border-color: #f0f0f0;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(20, 20, 20, 0.7);
   display: block;
   width: 80%;
   text-align: center;
@@ -201,18 +203,18 @@ body {
 .main-text h1 {
   margin: 0;
   color: #fafafa;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins";
 }
 
 .main-text h2 {
   margin: 0;
   color: #67e789;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins";
 }
 
 .main-text p {
-  margin: 20px 0;
-  color: #f0f0f0;
+  margin: 1.25rem 0;
+  color: #fafafa;
 }
 
 .main-buttons {
@@ -220,11 +222,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background-color: black;  */
   margin: 0 auto;
   width: 45%;
   text-align: center;
   flex: 1 0;
+  /* background-color: black;  */
 }
 
 .button {
@@ -239,9 +241,6 @@ body {
   -moz-transition: .2s;
   -webkit-transition: .2s;
   transition: .2s;
-  -webkit-box-shadow: 0px 0px transparent;
-  -moz-box-shadow: 0px 0px transparent;
-  box-shadow: 0px 0px transparent;
 }
 
 .button:focus {
@@ -253,18 +252,18 @@ body {
 }
 
 .button:active {
-  background: #77f799;
+  opacity: 0.9;
 }
 
 .link-button {
   flex: 1;
-  padding: 10px 20px 10px 20px;
-  margin: 20px 10px;
+  padding: 0.625rem 1.25rem;
+  margin: 1.25rem 0.625rem;
   background: #67e789;
   border: 1px solid #050505;
   padding: .75rem 1rem;
   color: #050505;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins";
 }
 
 .background-video {
@@ -276,17 +275,17 @@ body {
   width: auto;
   height: auto;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(assets/landingPage/backgroundImage.jpg) no-repeat;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  background: url(../assets/landingPage/backgroundImage.jpg) no-repeat;
   background-size: cover;
 }
 
 @media screen and (max-device-width: 800px) {
   html {
-    background: url(assets/landingPage/backgroundImage.jpg) #000 no-repeat center center fixed;
+    background: url(../assets/landingPage/backgroundImage.jpg) #050505 no-repeat center center fixed;
   }
   .background-video {
     display: none;
@@ -304,7 +303,8 @@ video {
   width: 100%;
   height: 100%;
   z-index: -50;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
   -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
   -moz-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+  -ms-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
 }

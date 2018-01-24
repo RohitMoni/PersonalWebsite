@@ -1,0 +1,29 @@
+@mixin box-shadow($hoffset, $voffset, $blur, $colour, $style: initial) {
+    box-shadow: $hoffset $voffset $blur $colour $style;
+    -webkit-box-shadow: $hoffset $voffset $blur $colour $style;
+    -moz-box-shadow: $hoffset $voffset $blur $colour $style;
+    -ms-box-shadow: $hoffset $voffset $blur $colour $style;
+}
+
+@mixin translateXY($X, $Y) {
+    transform: translateX($X) translateY($Y);
+    -webkit-transform: translateX($X) translateY($Y);
+    -moz-transform: translateX($X) translateY($Y);
+    -ms-transform: translateX($X) translateY($Y);
+}
+
+@mixin transition($time) {
+    transition: $time;
+    -o-transition: $time;
+    -ms-transition: $time;
+    -moz-transition: $time;
+    -webkit-transition: $time;
+}
+
+@mixin user-select($mode) {
+    user-select: $mode;
+    -moz-user-select: $mode;
+    -ms-user-select: $mode;
+    -khtml-user-select: $mode;
+    -webkit-user-select: $mode;
+}

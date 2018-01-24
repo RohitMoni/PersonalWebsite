@@ -1,5 +1,10 @@
 @import '_common';
 
+/* Page Vars */
+$colour-vignette-shadow: rgba(0, 0, 0, 0.9);
+
+/* ******************* */
+
 body {
 	justify-content: space-between;
 }
@@ -8,39 +13,38 @@ body {
 	display: block;
 	margin: 0;
 	flex-basis: 40%;
-	min-width: 100px;
-	max-width: 600px;
+	min-width: 6.25rem;
+	max-width: 37.5rem;
 	width: 65%;
 	 /* background-color: white;   */
 }
 
 .main-text {
-	border: 1px solid #efefef;
-	padding: 20px 20px 10px 20px;
+	border: 1px solid $colour-landing-1;
+	padding: 1.25rem 1.25rem 0.625rem 1.25rem;
 	margin: 0 auto;
-	border-color: #f0f0f0;
-	background-color: rgba(20, 20, 20, 0.8);
+	background-color: $colour-landing-5;
 
 	display: block;
 	width: 80%;
 	text-align: center;
-}
 
-.main-text h1 {
-	margin: 0;
-	color: #fafafa;
-	font-family: 'Poppins', sans-serif;
-}
+	h1 {
+		margin: 0;
+		color: $colour-landing-1;
+		font-family: $font-heading-1;
+	}
 
-.main-text h2 {
-	margin: 0;
-	color: #67e789;
-	font-family: 'Poppins', sans-serif;
-}
+	h2 {
+		margin: 0;
+		color: $colour-landing-2;
+		font-family: $font-heading-2;
+	}
 
-.main-text p {
-	margin: 20px 0;
-	color: #f0f0f0;
+	p {
+		margin: 1.25rem 0;
+		color: $colour-landing-1;
+	}
 }
 
 .main-buttons {
@@ -48,17 +52,17 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	 /* background-color: black;  */
 	margin: 0 auto;
 	width: 45%;
 	text-align: center;
 	flex: 1 0;
+	 /* background-color: black;  */
 }
 
 .button {
 	font-size: 1rem;
-	background: #67e789;
-	border: 1px solid #050505;
+	background: $colour-landing-2;
+	border: 1px solid $colour-landing-4;
 	text-decoration: none;
 	font-weight: 700;
 	text-align: center;
@@ -69,32 +73,28 @@ body {
 	-webkit-transition: .2s;
 	transition: .2s;
 
-	-webkit-box-shadow: 0px 0px rgba(0, 0, 0, 0.0);
-	-moz-box-shadow: 0px 0px rgba(0, 0, 0, 0.0);
-	box-shadow: 0px 0px rgba(0, 0, 0, 0.0);
-}
+	&:focus {
+		outline: 0;
+	}
 
-.button:focus {
-	outline: 0;
-}
+	&:hover {
+		opacity: 0.7;
+	}
 
-.button:hover {
-	opacity: 0.7;
-}
-
-.button:active {
-	background: #77f799;
+	&:active {
+		opacity: 0.9;
+	}
 }
 
 .link-button {
 	flex: 1;
-	padding: 10px 20px 10px 20px;
-	margin: 20px 10px;
-	background: #67e789;
-	border: 1px solid #050505;
+	padding: 0.625rem 1.25rem;
+	margin: 1.25rem 0.625rem;
+	background: $colour-landing-2;
+	border: 1px solid $colour-landing-4;
 	padding: .75rem 1rem;
-	color: #050505;
-	font-family: 'Poppins', sans-serif;
+	color: $colour-landing-4;
+	font-family: $font-heading-3;
 }
 
 .background-video {
@@ -107,18 +107,15 @@ body {
 	height: auto;
 	z-index: -100;
 
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+	@include translateXY(-50%, -50%);
 
-	background: url(assets/landingPage/backgroundImage.jpg) no-repeat;
+	background: $background-landing-url no-repeat;
 	background-size: cover;
 }
 
 @media screen and (max-device-width: 800px) {
 	html {
-		background: url(assets/landingPage/backgroundImage.jpg) #000 no-repeat center center fixed;
+		background: $background-landing-url $colour-landing-4 no-repeat center center fixed;
 	}
 	.background-video {
 		display: none;
@@ -135,7 +132,5 @@ video { display: block; }
 	height: 100%;
 	z-index: -50;
 
-	-webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-	-moz-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
-	box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+	@include box-shadow(0, 0, 200px, $colour-vignette-shadow, inset);
 }
