@@ -1,0 +1,117 @@
+# showcase
+showcase:
+  enable: true
+  title: ""
+  subtitle: "Software Developer"
+  description: "I'm currently working at <a target='_blank' href='https://unity.com/'>Unity</a>, a global company making one of the best tools for modern video game development and other realtime, interactive, 3D content."
+  image:
+    x: "img/showcase/showcase.png"
+    _2x: "img/showcase/showcase@2x.png"
+  imageMobile:
+    x: "img/showcase/showcase-mobile.jpg"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "mailto:rohitmdxb@gmail.com"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/rohitmoni/"
+
+    - icon: "github"
+      URL: "https://github.com/RohitMoni"
+
+# about
+about:
+  enable: true
+  title: "Who am I?"
+  content: '<p class="lead">
+    Gamer. Developer. Nerd / Geek. I have too many pairs of headphones. Born in India, grew up in Dubai and now proudly Canadian. 
+    </p>
+    <p class="lead">
+    Looking to learn more about cloud technologies and web dev. Very interested in finance, music, education and game development.
+    </p>
+    <p class="lead">
+    This website is <a target="_blank" href="https://github.com/RohitMoni/PersonalWebsite">built and maintained by me</a> using Hugo, Github Pages and an awesome theme.
+    </p>'
+  image:
+    x: "img/who-am-i/user-picture.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: "Background in AAA games (Ex: Minecraft for Switch) and tools, years of professional experience in C++ and now C#. Mentored other devs and interns and have lots of experience ramping up on large, existing codebases quickly."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/rohitmoni/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My Resume"
+    URL: "#"
+
+  items:
+    - title: "Sr. Software Developer"
+      company: "Unity"
+      duration: "July 2020 - Now"
+
+    - title: "Software Developer"
+      company: "Unity"
+      duration: "Nov 2019 - July 2020"
+
+    - title: "Software Developer"
+      company: "NoviFlow"
+      duration: "Jan 2019 - Nov 2019"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "Ontario Tech University"
+      year: "2011-2015"
+      degree: "Bachelor of Information Technology, Game Development & Entrepreneurship"
+
+# Client & Work
+client_and_work:
+  title: "Clients & Works"
+  enable: false
+
+# testimonial
+testimonial:
+  enable: false
+  title: "Referrals"
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    action: "#"
+    full_name: "Full Name"
+    email: "Email Address"
+    message: "Type Your Message Here"
+  phone:
+    enable: false
+    title: "Phone Number"
+    number: "+41 (44) 505 10 99"
+  email:
+    title: "Email"
+    email: '<a href="mailto:rohitmdxb@gmail.com">rohitmdxb@gmail.com</a>'
+  address:
+    title: "Location"
+    address: "Montreal, Canada"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
+
+# newsletter
+newsletter:
+  enable: false
+  title: "Newsletter subscription"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "We'll never share your email with anyone else."
