@@ -6,7 +6,6 @@ This is currently WIP.
 ## Todo:
 - Get new pictures for the main page
 - Change / remove the contact form so that it actually works (or doesn't exist)
-- Get this site to host on github pages
 - Use my custom domain (rohitmoni.com)
 
 ## Acknolwedgements
