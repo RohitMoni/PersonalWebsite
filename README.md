@@ -2,10 +2,10 @@
 
 This is my personal website, built using Hugo and hosted via Github Pages.
 This is currently WIP.
+See the [live](https://RohitMoni.github.io/PersonalWebsite) version.
 
 ## Todo:
 - Get new pictures for the main page
-- Change / remove the contact form so that it actually works (or doesn't exist)
 - Use my custom domain (rohitmoni.com)
 
 ## Acknolwedgements

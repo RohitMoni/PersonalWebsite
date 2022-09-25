@@ -4,6 +4,7 @@
         <div class="contact">
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
             <div class="row pt-2">
+                {{ if .Site.Data.homepage.contact.form.enable }}
                 <div class="col-12 col-lg-7">
                     <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
                         <div class="row">
@@ -33,6 +34,9 @@
                     </form>
                 </div>
                 <div class="col-12 col-lg-5 contact__info">
+                {{ else }}
+                <div class="col contact__info">
+                {{ end }}
                     {{ if .Site.Data.homepage.contact.phone.enable }}
                     <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
                     <span>{{ .Site.Data.homepage.contact.phone.number }}</span>
