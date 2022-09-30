@@ -4,6 +4,14 @@ This is my personal website, built using Hugo and hosted via Github Pages.
 This is currently WIP.
 See the [live](https://RohitMoni.github.io/PersonalWebsite) version.
 
+## Requirements
+
+Hugo
+
+## Getting Started
+
+Run the server locally with `hugo server -D`
+
 ## Todo:
 - Get new pictures for the main page
 - Use my custom domain (rohitmoni.com)
